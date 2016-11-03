@@ -152,9 +152,9 @@
 		A2ADF7E91914481B0078BB16 /* MSTableOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ADF7E81914481B0078BB16 /* MSTableOperationTests.m */; };
 		A2C14C6A19105D9F00A58609 /* MSSyncContextReadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C14C6819105D9F00A58609 /* MSSyncContextReadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2C14C6B19105D9F00A58609 /* MSSyncContextReadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C14C6919105D9F00A58609 /* MSSyncContextReadResult.m */; };
-		A38A856F1BC35C8F005D63DF /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D0EFD8581B2F785F009CF6DA /* MSPullSettingsInternal.h */; settings = {ASSET_TAGS = (); }; };
-		A38A85701BC35CA1005D63DF /* MSQueuePullOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EA41DC1B0E62F40014B587 /* MSQueuePullOperationInternal.h */; settings = {ASSET_TAGS = (); }; };
-		A38A85711BC35CE5005D63DF /* MSTestWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4D498B1A3253E2006AEB70 /* MSTestWaiter.m */; settings = {ASSET_TAGS = (); }; };
+		A38A856F1BC35C8F005D63DF /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D0EFD8581B2F785F009CF6DA /* MSPullSettingsInternal.h */; };
+		A38A85701BC35CA1005D63DF /* MSQueuePullOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EA41DC1B0E62F40014B587 /* MSQueuePullOperationInternal.h */; };
+		A38A85711BC35CE5005D63DF /* MSTestWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4D498B1A3253E2006AEB70 /* MSTestWaiter.m */; };
 		CF1D74591A5D85C60074789F /* MSQueuePurgeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D74581A5D85C60074789F /* MSQueuePurgeOperation.m */; };
 		CF1D745B1A5D9CAB0074789F /* MSQueuePurgeOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1D745A1A5D85D80074789F /* MSQueuePurgeOperation.h */; };
 		CF4D49861A2E5C96006AEB70 /* MSQueuePullOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4D49851A2E5C96006AEB70 /* MSQueuePullOperation.h */; };
@@ -1018,14 +1018,14 @@
 		};
 		E8F33AEA1616659C002DD7C6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
@@ -1383,11 +1383,7 @@
 		E8F33B041616659C002DD7C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "src/WindowsAzureMobileServices-Prefix.pch";
 				INFOPLIST_FILE = "test/WindowsAzureMobileServicesTests-Info.plist";
@@ -1399,11 +1395,7 @@
 		E8F33B051616659C002DD7C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "src/WindowsAzureMobileServices-Prefix.pch";
 				INFOPLIST_FILE = "test/WindowsAzureMobileServicesTests-Info.plist";
